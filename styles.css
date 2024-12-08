@@ -1,80 +1,85 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f3f4f7;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
 }
 
-nav {
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+header nav ul li {
+    margin: 0 1em;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px;
-    font-size: 18px;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    background-color: #575757;
-    border-radius: 5px;
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
 }
 
 .formulario {
     width: 320px;
-    margin: 20px;
+    margin: 0 auto;
     padding: 20px;
     border: 1px solid #69a7e2;
     border-radius: 12px;
     box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
     background-color: #a6b4c1;
+}
+
+.formulario h2 {
     text-align: center;
+    margin-bottom: 1em;
+    color: #003366;
 }
 
-input[type="text"], input[type="email"], input[type="password"], input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.formulario div {
+    margin-bottom: 1em;
 }
 
-button {
-    background-color: #69a7e2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #507caa;
-}
-
-#ver-imagen {
+.formulario label {
     display: block;
-    margin-top: 10px;
-    max-width: 100px;
-    border-radius: 10px;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+.vista-imagen {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.vista-imagen img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
 }
